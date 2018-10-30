@@ -15,7 +15,9 @@ var GenRoutes            = require("./routes/General_routes.js"),
 
 // ======================= Configuration =======================================
 mongoose.set("useFindAndModify", false);
-mongoose.connect("mongodb://localhost/tboxdatabase", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/tboxdatabase", { useNewUrlParser: true });
+mongoose.connect("mongodb://Stuart:80954123Aa@ds145923.mlab.com:45923/tboxdatabase", { useNewUrlParser: true });
+
 var app = express();
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
