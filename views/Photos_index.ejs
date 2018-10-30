@@ -1,0 +1,25 @@
+<% include partials/header %>
+<div class="container">
+<h1>Photos</h1>
+	<% photos.forEach(function(photo){ %>
+	<div class="item col-lg-4 col-sm-6">
+        
+		
+		<div>
+			<a href="/Photos/<%=photo._id %>"><img src="<%= photo.image %>"></a>
+		</div>
+		<div>
+			<a class= "PTitle" href="/Photos/<%=photo._id %>"><%= photo.title %></a>
+		</div>
+		<div>
+			<span class= "date" ><em><%= photo.created.toDateString() %></em></span>
+		</div>
+
+	</div>
+	<% }); %>
+	<div class="item col-lg-4 col-sm-6">
+		<a href="/Photos/new"><img class="addpic" src="/assets/Plus_button.png"></a>
+	</div>
+	
+</div>
+<% include partials/footer %>

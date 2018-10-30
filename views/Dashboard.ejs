@@ -1,0 +1,89 @@
+<% include partials/header %>
+<div class="container">
+    <h1>Good day <%= currentUser.username %></h1>
+    <div class="row">
+        
+ 		<div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">Weather</div>
+                <div class="panel-body">
+                  <div class = "row">
+                    <div class="col-xs-6">
+                      <img class="smallWIcons" id= "Wicons">
+                    </div>
+                    <div class="col-xs-6">
+                      <h3 id ="Temp"></h3>
+                      <h3 id ="status"></h3>
+                    </div>
+                  </div>
+                  <div class = "row">
+                    <h3 id ="city"></h3>
+                  </div>  
+                    
+
+                </div>
+            </div>
+	  	</div>
+
+ 		<div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><a class= "linkspecial" href = "/News">News</a></div>
+                <div class="panel-body">
+                    <h3 id ="NewsTitle"></h3>
+                    <p id ="NewsDesc"></p>
+                </div>
+            </div>
+	  	</div>
+
+ 		<div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><a class= "linkspecial" href= "/Sport">Sport</a></div>
+                <div class="panel-body">
+                    <h3 id ="SportTitle"></h3>
+                    <p id ="SportDesc"></p>
+                </div>
+            </div>
+	  	</div>	  	
+    </div>
+    <div class="row">
+ 		<div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><a class= "linkspecial" href= "/Photos">Photos</a></div>
+                <div class="panel-body">
+                  	<% photos.slice(-4).forEach(function(photo){ %>
+                	      		<div class="col-xs-6">
+			                        <img class="smallthumbs" src="<%= photo.image %>"></a>
+		                        </div>
+                  	<% }); %>
+                    
+                </div>
+            </div>
+	  	</div>
+
+ 		<div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><a class= "linkspecial" href= "/Tasks">Tasks</a></div>
+                <div class="panel-body">
+              	<ol>
+                  	<% tasks.slice(-3).forEach(function(task){ %>
+                        <li class="Todo_s" id=<%= task._id %> ><%= task.taskdetails %><input type="checkbox" id="checking_s"><hr id="line_s"></li>
+                  	<% }); %>
+              		</ol>
+                </div>
+            </div>
+	  	</div>
+	  	
+ 		<div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><a class= "linkspecial" href= "/Clothes">Clothes</a></div>
+                <div class="panel-body" id= "ChartDiv">
+
+                </div>
+            </div>
+	  	</div>	  	
+ 	</div>
+</div>
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script src = "../javascripts/Dash_script.js"></script>
+<% include partials/footer %>

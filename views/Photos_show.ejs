@@ -1,0 +1,29 @@
+<% include partials/header %>
+    <div class="container">
+   	    <h1><%=photo.title%></h1>
+   	    
+	        <div class="item">
+	           <img src="../../<%= photo.image %>">
+                <div>
+	                <span><%= photo.created.toDateString() %></span>
+                </div>
+        	     <div>
+        	        <p><%- photo.body %></p>
+        	     </div>
+            </div>
+            
+            <div class = "row">
+                <div class = "col-lg-4">
+                    <a href="/Photos/<%=photo._id%>/edit"><button class="btn-lg btn-default">Update Photo Entry</button> </a>
+                </div>
+                <div class = "col-lg-4">
+                    <form method="POST" action="/Photos/<%=photo._id%>?_method=DELETE" class="form-inline">
+                        <button id= "delbutton" class="btn-lg btn-default" type="submit">Delete Photo Entry</button>
+                    </form>
+                </div>
+                <div class = "col-lg-4">
+                        <a href="/Photos"><button class="btn-lg btn-default">Gallery</button> </a>
+                </div>
+            </div>
+    </div>
+<% include partials/footer %>

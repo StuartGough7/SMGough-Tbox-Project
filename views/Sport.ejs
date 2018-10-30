@@ -1,0 +1,37 @@
+<% include partials/header %>
+
+<div class="container">
+        <h1>Sport</h1>
+        <div class="row">
+     		<div class="col-lg-12">
+         		<input type="text" placeholder="Input Team Name">
+     		</div>
+ 		</div>
+ 		
+        <div class="row">
+        <div class="col-lg-6">
+            <h4>Select a Team Below: </h4>
+     		<div class="panel panel-primary" id="scrollable">
+     		<ol class= "TeamLibrary">
+                                                                                <!--Dynamic lis here-->
+    		</ol>
+    		</div>
+        </div>   
+        
+        
+        <div class="col-lg-6">
+
+     		<h4 class= "segway">Teams Beaten by :</h4>
+             <div class="row">
+         		<div id="cntnr">
+         		    <div class="panel panel-primary" id="scrollable">
+             		<ul class= "Teamsbeaten">
+            		</ul>
+            		</div>
+         		</div>
+      		</div>
+  		</div>
+  		</div>
+</div>
+<script src = "../javascripts/Sport_script.js"></script>
+<% include partials/footer %>

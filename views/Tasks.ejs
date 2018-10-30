@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+<div class="container">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content">
+				<h1>Tasks</h1>
+ 			</div>
+ 		</div>
+ 	</div>
+	<div id="cntnr">
+    	<ol>
+          	<% tasks.forEach(function(task){%>
+                <li class="Todo" id=<%= task._id %> ><%= task.taskdetails %><input type="checkbox" id="checking"><span><i class="fa fa-trash"></i></span><hr id="line"></li>
+          	<% }); %>
+		</ol>
+		
+		<div><span id="toggle-form"><img id= "addtask" src="../assets/Plus_button_small.png" alt="Add Task"></span></div>
+		
+		<form action="/Tasks" method="POST" class="form-inline">
+			<input type="text" placeholder="Add New Task" name = "task[taskdetails]" style="display: none;" required>
+			<button class="btn-lg btn-default" style="display: none;">Create Task Entry</button>
+		</form>
+		
+	</div>
+</div>
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src = "../javascripts/Task_script.js"></script>
+<% include partials/footer %>
+
+<input type="text" placeholder="Add New Task" name="task[taskdetails]" required="" style="display: none;">

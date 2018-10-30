@@ -1,0 +1,397 @@
+body, html {
+	background: url("/assets/Background.png");
+	text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    font-family: "Lato";
+    color: white;
+}
+
+h1 {
+	margin: 3% auto 4% auto;
+	font-weight: 700;
+	font-size: 5em;
+}
+
+h3 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+h4 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+
+a{
+	color: rgb(255,230,94);
+
+}
+
+p{
+	font-size: 1.5em;
+	margin-bottom: 50px;
+}
+
+img {
+	width: 280px;
+	height: 280px;
+	object-fit: cover;
+	border: 3px solid rgb(255, 230, 94);
+	outline: none;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.smallthumbs {
+	width: 100%;
+	height: 100%;
+	max-height: 70px;
+}
+
+.smallWIcons {
+	width: 100%;
+	height: 100%;
+	max-height: 70px;
+	object-fit: scale-down;
+	border: none;
+	background-color: transparent;
+}
+
+
+
+.linkspecial {
+	font-weight: 700;
+	font-size: 20px;
+	font-family: "Lato";
+    color: black;
+}
+
+.col-xs-6 {
+	max-height: 70px;
+	margin-bottom: 10px;
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	margin: 20px auto;
+	margin-bottom: 0;
+
+}
+
+.navbar{
+background-color: rgb(116, 164, 240);
+border-bottom : 2px solid rgb(255, 230, 94);
+border-top: 0px; 
+	
+}
+
+.nav.navbar-nav.navbar-right li a {
+	font-weight: 700;
+	font-family: "Lato";
+    color: white;
+}
+
+.panel-primary {
+	border: 5px solid;
+    border-color: rgb(255, 230, 94);
+    border-radius: 10px;
+    height: 250px;
+    margin-bottom: 70px;
+    background-color: rgba(192, 214, 249, 0.6);
+    overflow-y: hidden;
+}
+
+.panel-primary>.panel-heading {
+    background-color: rgb(255, 230, 94);
+    border-color: rgb(255, 230, 94);
+	font-weight: 700;
+	font-size: 20px;
+	font-family: "Lato";
+    color: black;
+}
+
+.panel-body {
+	font-weight: 400;
+	font-size: 17px;
+	font-family: "Lato";
+    color: black;
+}
+
+
+.panel-body, p {
+	margin-top: 10px;
+	font-size: 15px;
+	max-height: 100%
+
+}
+
+.item{
+
+	margin-bottom: 50px;
+
+}
+
+.form-inline .form-control{
+	border: 0;
+  	box-shadow: 0 0 0;
+  	border-bottom: 2px solid white;
+	border-radius: 0;
+  	background: transparent;
+	font-weight: 400;
+	font-size: 2em;
+  	color: #fff;
+}
+
+.form-control::-webkit-input-placeholder{ 
+    color: #fff;
+}
+
+.form-control::-moz-placeholder{ 
+    color: #fff;
+}
+
+.form-control:-moz-placeholder {
+    color: #fff;
+}
+
+.form-control::-ms-input-placeholder { 
+    color: #fff;
+}
+
+.form-inline .btn { 
+	margin-top: 5%;
+	margin-bottom: 30px;
+	background: url("/assets/Login_button.png");
+    background-position: center;
+    background-size: 100% 100%;
+    width: 20em;
+    height: 4em;
+	border: 0;
+	border-radius: 200px;
+}
+
+.paragraph {
+	margin-top: 200px;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+
+.addpic{
+	object-fit: scale-down;
+}
+
+.PTitle{
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.date{
+	font-weight: 400;
+	font-size: 0.75em;
+}
+
+.btn-default{
+ 	margin: 50px 20px;
+	border: 0;
+	border-radius: 200px;
+	background-color: rgb(255, 230, 94);
+	font-weight: 700;
+	width: 300px;
+	height: 70px;
+	
+}
+
+.row2 {
+	margin-top: 120px;
+}
+
+.picture {
+	margin-top: 60px;
+}
+
+
+.shrink {
+	height: 30px;
+}
+
+#formnewpic, #ImageTitle, #ImageURL, #ImageImageDesL {
+	margin-top: 50px;
+	width: 80%;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+#delbutton{
+	margin-bottom: 50px;
+	background-color: rgb(244, 95, 66);
+}
+
+#Temp, #status{
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+#city{
+	font-size: 30px;
+}
+
+li {
+	height: 60px;
+	line-height: 60px;
+	font-weight: 400;
+	font-size: 20px;
+	vertical-align: bottom;
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+li span {
+	background: #e74c3c;
+	height: 57px;
+	margin-top: 3px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+	float: right;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.Todo_s{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+
+input {
+	font-size: 18px;
+	color: #2980b9;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	border-radius: 10px;
+}
+
+input:focus{
+	background: #fff;
+	border: 3px solid rgb(255, 230, 94);
+	outline: none;
+}
+
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.yelltext {
+	margin-top: 40px;
+	color: rgb(255, 230, 94);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+
+#checking {
+	margin: 5px 0 5px 20px ;
+	height: 50px;
+	width: 50px;
+	background: white;
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+
+#checking_s{
+	margin: 5px 0 5px 20px ;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+
+#toggle-form {
+	margin: 30px 0;
+	float: left;
+}
+
+#toggle-form:hover {
+	cursor: pointer;
+}
+
+#cntnr {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#line{
+	margin: 0 70px 0 0px;
+  	border-bottom: 2px solid white;
+	border-radius: 0;
+}
+
+#line_s{
+	margin: 0 20px 0 0px;
+  	border-bottom: 2px solid black;
+	border-radius: 0;
+	border-top: 0;
+}
+
+#addtask{
+	background: transparent;
+	border:none;
+	height: 70px;
+	width: 70px;
+}
+
+#ChartDiv{
+	width:100%;
+	height:75%;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#scrollable{
+	overflow-y: scroll;
+	height: 500px;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#Newsimage{
+	width: 600px;
+  	margin-bottom: 40px;
+}
+
+#NewsTitle_L{
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 20px;
+  	color: white;
+
+}

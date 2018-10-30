@@ -1,0 +1,52 @@
+<% include partials/header %>
+<div class="container">
+ 	<div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content">
+ 				<h1>Hackathon</h1>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<form class="form-inline" id="regform" action="/register" method="post">
+ 		<div class="row">
+ 			<div class="col-lg-6">
+			  <div class="form-group">
+			    <label for="User_Name"></label>
+			    <input type="text" class="form-control" id="User_Name" placeholder="Username" name="username" required>
+			  </div>
+		  	</div>
+		  	<div class="col-lg-6">
+			  <div class="form-group">
+			    <label for="Email"></label>
+			    <input type="email" class="form-control" id="Email" placeholder="Email" required>
+			  </div>
+			</div>
+ 		</div>
+ 		<div class="row row2">
+ 			<div class="col-lg-6">
+			  <div class="form-group">
+			    <label for="Pass_word"></label>
+			    <input type="password" class="form-control" id="Pass_word" placeholder="Password" pattern="{5,10}" name= "password" required title="5 to 10 characters">
+			  </div>
+		  	</div>
+		  	<div class="col-lg-6">
+			  <div class="form-group">
+			    <label for="Conf_Pass_word"></label>
+			    <input type="password" class="form-control" id="Conf_Pass_word" placeholder="Confirm Password" pattern="{5,10}" required title="5 to 10 characters">
+			  </div>
+			</div>
+ 		</div>
+ 		
+ 		<div class="row ">
+			<p class= "yelltext" style="display: none;"> Form Not Completed Correctly, Try again</p>
+		</div>
+	 
+ 	</form> 
+  	 	<div class="row ">
+	 		<div class="col-lg-12">
+				<button value="Submit" type="submit" id="btnSubmit" class= "btn-default btn-lg" >Register</button>
+	 		</div>
+	 	</div>
+</div>	
+<script src = "../javascripts/Register_script.js"></script>
+<% include partials/footer %>
